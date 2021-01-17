@@ -1,2 +1,7 @@
 # creativ_school
-The design by Masha Gavrykh get a live here
+
+Website for a small creative online school is getting life here.
+
+Masha Gavrykh designed all the project.
+You could find the template by this link:
+https://cutt.ly/CjU28v9
