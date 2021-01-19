@@ -416,6 +416,7 @@ h1, h2, h3, h4, p, a, button, ::placeholder {
     width: 40%;
     display: flex;
     justify-content: center;
+    padding-left: 40px;
 }
 
 .teachers_card_img-img {
@@ -455,9 +456,18 @@ h1, h2, h3, h4, p, a, button, ::placeholder {
     margin-bottom: 12px;
 }
 
-.teachers_card_socials-item {
+.teachers_card_socials-item, .teachers_card_socials-item:visited {
     font-size: 24px;
     color: #49ba79;
     margin-right: 18px;
+    text-decoration: none;
+}
+
+.teachers_card_socials-item:hover {
+    filter: brightness(1.1);
+}
+
+.teachers_card_socials-item:active {
+    filter: brightness(1.2);
 }
 
