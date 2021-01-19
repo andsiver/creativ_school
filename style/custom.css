@@ -120,7 +120,7 @@ h1, h2, h3, p, a, button, ::placeholder {
 /* Section-1 */
 
 .section-1 {
-    background: #ff9d00;
+    background: #f77757;
     z-index: 5;
 }
 
@@ -138,36 +138,56 @@ h1, h2, h3, p, a, button, ::placeholder {
     z-index: auto;
 }
 
-.offer_text {
+.offer_text-wrap {
     width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+
+.offer_text {
+    max-width: 650px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    margin-bottom: 160px;
+    position: relative;
     z-index: 10;
 }
 
 .offer_text-title {
+    padding-top: 55px;
     font-size: 48px;
     font-weight: 600;
+    line-height: 58px;
     color: #fffcfa;
 }
 
 .offer_text-title_discount {
-    font-size: 90px;
+    font-size: 105px;
     font-weight: 600;
-    text-shadow: 0px 0px 7px #ffc400;
+    text-shadow: 0px 0px 15px #ffb70050;
+    position: absolute;
+    right: 0;
+}
+
+@supports (-webkit-text-stroke: 3px #ffb500) {
+    .offer_text-title_discount {
+      -webkit-text-stroke: 3px #ffb500;
+      -webkit-text-fill-color: transparent;
+    }
 }
 
 .offer_text-descr {
-    margin: 30px 20px 40px 0;
-    font-size: 25px;
+    max-width: 341px;
+    margin: 25px 0 38px 0;
+    font-size: 18px;
+    line-height: 22px;
     color: #fffcfa;
 }
 
-.offer_button-button {    
-    padding: 15px 50px;
+.offer_button-button {   
+    min-width: 200px;
+    min-height: 56px; 
     background: #49ba79;
     border: 1px solid #49ba79;
     border-radius: 30px;
@@ -194,3 +214,7 @@ h1, h2, h3, p, a, button, ::placeholder {
     width: 40%;
     z-index: 5;
 }
+
+/* Section-2 */
+
+
