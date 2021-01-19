@@ -5,7 +5,7 @@ body {
     z-index: auto;
 }
 
-h1, h2, h3, p, a, button, ::placeholder {
+h1, h2, h3, h4, p, a, button, ::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -228,11 +228,11 @@ h1, h2, h3, p, a, button, ::placeholder {
     margin: 0 auto;
 }
 
-.why_titile {
-    margin-bottom: 60px;
+.why_title {
     text-align: center;
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 600;    
+    margin-bottom: 60px;
 }
 
 .why-wrap {
@@ -379,3 +379,85 @@ h1, h2, h3, p, a, button, ::placeholder {
     color: #8dffbc;
     transition: 0.1ms;
 }
+
+/* Sec-4 */ 
+
+.section-4 {
+    z-index: 5;
+}
+
+.section-4_container {
+    max-width: 1410px;
+    min-height: 710px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.teachers {
+    display: flex;
+    flex-direction: column;
+}
+
+.teachers_title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 73px;
+    margin-bottom: 65px;
+}
+
+.teachers-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teachers_card {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.teachers_card_img-img {
+    border-radius: 50%;
+}
+
+.teachers_card_cred {
+    max-width: 260px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.teachers_card-3, .teachers_card-4 {
+    margin-top: 84px;
+}
+
+.teachers_card_cred-name {
+    font-size: 21px;
+    font-weight: 700;
+    color: #49ba79;
+    margin-bottom: 5px;
+}
+
+.teachers_card_cred-exp {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.teachers_card_cred-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.3px;
+    margin-bottom: 12px;
+}
+
+.teachers_card_socials-item {
+    font-size: 24px;
+    color: #49ba79;
+    margin-right: 18px;
+}
+
