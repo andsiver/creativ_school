@@ -34,14 +34,64 @@
 
         <!-- Google fonts -->    
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Raleway:wght@700&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
         <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header class="header">
+        <div class="header_container">
+            <div class="header_logo">
+                <a href="#"><img src="./img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="header_search">
+                <input class="header_search-input" 
+                       type="search" 
+                       placeholder="Поиск по сайту">
+                <label for="header_search-input"></label>
+                <button class="header_search-button">
+                    <img class="header_search-button_icon" src="./img/search.png" alt="Search icon">
+                </button>
+            </div>
+            <nav class="header_nav">
+                <ul class="header_nav-ul">
+                    <li class="header_nav-li">
+                        <a class="header_nav-li-a" href="#">Курсы</a>
+                    </li>
+                    <li class="header_nav-li">
+                        <a href="#" class="header_nav-li-a">Наборы</a>
+                    </li>
+                    <li class="header_nav-li">
+                        <a href="#" class="header_nav-li-a">Блог</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header_button">
+                <button class="header_button-button">
+                    Авторизация
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-1 ">
+            <div class="section-1_container offer">
+                <div class="offer_text">
+                    <h1 class="offer_text-title">
+                        <span>Курс недели</span> 
+                        <span class="offer_text-title_discount">-20%</span>
+                        <span>"Пластилиновые звери"</span></h1>
+                    <h3 class="offer_text-descr"> Оживи зверей из своей фантазии с помощью секретных техник лепки из прастилина. Будет весело!</h3>
+                    <div class="offer_text-button">
+                        <button class="offer_button-button">Купить</button>
+                    </div>
+                </div>
+                <div class="offer_img">
+                    <img class="offer_img-img" src="./img/girl.png" alt="A girl">
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 
     <script src="./plugin/jquery/jquery.min.js"></script>
