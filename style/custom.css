@@ -218,13 +218,13 @@ h1, h2, h3, p, a, button, ::placeholder {
 /* Section-2 */
 
 .section-2 {
-    background: #e5e5e5;
+    background: #fffcfa;
     z-index: 5;
 }
 
 .section-2_container {
     max-width: 1410px;
-    min-height: 1200px;
+    min-height: 980px;
     padding: 50px 15px 0 15px;
     margin: 0 auto;
 }
@@ -252,13 +252,73 @@ h1, h2, h3, p, a, button, ::placeholder {
 }
 
 .why_text_item {
-    max-width: 400px;
+    max-width: 350px;
+    padding-left: 33px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: auto;
+}
+
+.why_text_item-title {
+    padding: 40px 0 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.why_text_item-body {
+    font-size: 18px;
+    line-height: 22px;
+    z-index: 10;
+}
+
+.why_text_item-num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 .why_circles {
+    width: 60%;
+    position: relative;
     z-index: 5;
 }
 
 .why_circles-item_img {
     border-radius: 50%;
 }
+
+.why_circles-item-1, 
+.why_circles-item-2, 
+.why_circles-item-3,
+.why_circles-item-4,
+.why_circles-item-5 {
+    position: absolute;
+}
+
+.why_circles-item-1 {
+    top: 0%;
+    left: 20%;
+}
+
+.why_circles-item-2 {
+    left: 43%;
+    top: 2%;
+}
+
+.why_circles-item-3 {
+    left: 8%;
+    top: 29%;
+}
+
+.why_circles-item-4 {
+    left: 50%;
+    top: 43%
+}
+
+.why_circles-item-5 {
+    left: 19%;
+    top: 76%
+}
+
