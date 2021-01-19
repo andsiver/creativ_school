@@ -218,13 +218,12 @@ h1, h2, h3, p, a, button, ::placeholder {
 /* Section-2 */
 
 .section-2 {
-    background: #fffcfa;
     z-index: 5;
 }
 
 .section-2_container {
     max-width: 1410px;
-    min-height: 980px;
+    min-height: 970px;
     padding: 50px 15px 0 15px;
     margin: 0 auto;
 }
@@ -322,3 +321,61 @@ h1, h2, h3, p, a, button, ::placeholder {
     top: 76%
 }
 
+/* Sec-3 */ 
+
+.section-3 {
+    background: #fff;
+    z-index: 5;
+}
+
+.section-3_container {
+    max-width: 1410px;
+    min-height: 213px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.mailing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mailing_text {
+    width: 62%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mailing_text-title {
+    max-width: 800px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    padding-right: 40px;
+}
+
+.mailing_button-button {   
+    min-width: 237px;
+    min-height: 52px; 
+    background: #49ba79;
+    border: 1px solid #49ba79;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fffcfa;
+    transition: 0.3s;
+}
+
+.mailing_button-button:hover {
+    background: transparent;
+    border: 1px solid #33da7a;
+    color: #33da7a;
+}
+
+.mailing_button-button:active {
+    background: #8dffbd2c;
+    border: 1px solid #8dffbc;
+    color: #8dffbc;
+    transition: 0.1ms;
+}
