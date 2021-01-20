@@ -14,7 +14,6 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 
 .header {
     width: 100%;
-    background: coral;
     position: absolute;
     top: 0;
     left: 50%;
@@ -120,7 +119,10 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 /* Section-1 */
 
 .section-1 {
-    background: #f77757;
+    background-image: url('../img/top-bg.svg'), linear-gradient(to right, #f77757, #ff8449, #ff9339, #ffa325, #ffb500);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
     z-index: 5;
 }
 
@@ -499,10 +501,13 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    border-radius: 3px;
     transition: 0.9s;
 }
 
 .works_item-img {
+    background: white;
+    border-radius: 3px 3px 0 0;
     transition: 0.9s;
 }
 
@@ -511,6 +516,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
     display: flex;
     align-items: center;
     background: #fff;
+    border-radius: 0 0 3px 3px;
 }
 
 .works_item-cred_img {
@@ -556,6 +562,11 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
     width: 400px;
     height: 493px;
     margin-top: 0;
+    filter: opacity(1);
+}
+
+.active .works_item-img {
+    filter: opacity(0.7);
 }
 
 .owl-item .works_item-img {
@@ -565,7 +576,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 /* Owl Carousel - Nav */ 
 
 .works-wrap .owl-nav {
-    width: 110%;
+    width: 115%;
     height: 200px;
     display: flex;
     justify-content: space-between;
@@ -579,18 +590,37 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 
 .owl-prev span, .owl-next span {
     font-size: 120px;
-    color: #49ba79;
+    color: transparent;
     transition: 0.3s;
+}
+.owl-prev span:before {
+    content: "-";
+    color: transparent;
+    background: url('../img/arrow-prev.svg') center no-repeat;
+    background-size: 100%;
+}
+
+.owl-next span:after {
+    content: "-";
+    color: transparent;
+    background: url('../img/arrow-next.svg') center no-repeat;
+    background-size: 100%;
 }
 
 .owl-prev span:hover, .owl-next span:hover {
     font-size: 140px;
+    background-size: 103%;
     filter: brightness(1.1);
 }
 
 .owl-prev span:active, .owl-next span:active {
     font-size: 160px;
+    background-size: 106%;
     filter: brightness(1.2);
+}
+
+.works-wrap .owl-carousel .owl-stage-outer {
+    z-index: 10;
 }
 
 /* Owl Carousel - Dots */ 
