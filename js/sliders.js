@@ -1,3 +1,7 @@
+AOS.init({
+    once: true
+});
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     nav:true,
