@@ -393,11 +393,6 @@ h1, h2, h3, h4, p, a, button, ::placeholder {
     margin: 0 auto;
 }
 
-.teachers {
-    display: flex;
-    flex-direction: column;
-}
-
 .teachers_title {
     text-align: center;
     font-size: 48px;
@@ -460,4 +455,132 @@ h1, h2, h3, h4, p, a, button, ::placeholder {
     color: #49ba79;
     margin-right: 18px;
 }
+
+/* Sec-5 */ 
+
+.section-5 {
+    z-index: 5;
+}
+
+.section-5_container {
+    max-width: 1200px;
+    min-height: 900px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.works_title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.works-wrap {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: auto;
+}
+
+.works_item {
+    width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.works_item-img {
+    transition: 0.5s;
+}
+
+.works_item-cred {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+.works_item-cred_img {
+    margin-left: 25px;
+}
+
+.works_item-cred_img-img {
+    border-radius: 50%;
+}
+
+.works_item-cred_text {
+    margin-left: 15px;
+}
+
+.works_item-cred_text-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.works_item-cred_text-pupil_dot {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: black;
+    margin: 5px;
+}
+
+.works_item-cred_text-pupil {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Owl Carousel */ 
+
+.center .works_item {
+    width: 400px;
+    height: 603px;
+}
+
+.works-wrap .center .works_item-img {
+    width: 400px;
+    height: 493px;
+    margin-top: 0;
+}
+
+.active .works_item-img {
+    margin-top: 30px;
+}
+
+
+
+
+.works-wrap .owl-nav {
+    width: 110%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 120px;
+    color: #49ba79;
+    transition: 0.3s;
+}
+
+.owl-prev span:hover, .owl-next span:hover {
+    font-size: 140px;
+    filter: brightness(1.1);
+}
+
+.owl-prev span:active, .owl-next span:active {
+    font-size: 140px;
+    filter: brightness(1.2);
+}
+
 
