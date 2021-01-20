@@ -1,6 +1,5 @@
 body {
     margin: 0 auto;
-    background: #fffcfa;
     position: relative;
     z-index: auto;
 }
@@ -22,9 +21,9 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 }
 
 .header_container {
-    max-width: 1410px;
+    max-width: 1350px;
     min-height: 84px;
-    padding: 0 15px;
+    padding: 0 45px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -119,18 +118,20 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 /* Section-1 */
 
 .section-1 {
-    background-image: url('../img/top-bg.svg'), linear-gradient(to right, #f77757, #ff8449, #ff9339, #ffa325, #ffb500);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    z-index: 5;
+    position: relative;
+    z-index: 2;
 }
 
 .section-1_container {
     max-width: 1410px;
-    min-height: 610px;
-    padding: 160px 15px 0 15px;
+    min-height: 625px;
+    padding: 140px 15px 0 15px;
     margin: 0 auto;
+
+    background-image: url('../img/left-gradient.svg'), url('../img/cutter.svg'), url('../img/girl.png'), url('../img/left.svg'), linear-gradient(to right, #f77757, #ff8449, #ff9339, #ffa325, #ffb500);
+    background-repeat: no-repeat;
+    background-position: left bottom, center bottom, 95% 65%, left bottom;
+    background-size: initial;
 }
 
 .offer {
@@ -141,7 +142,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 }
 
 .offer_text-wrap {
-    width: 60%;
+    width: 59%;
     display: flex;
     justify-content: flex-end;
     padding-top: 30px;
@@ -223,6 +224,21 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
     z-index: 5;
 }
 
+.section-2::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 82%;
+    background: #fffcfa url('../img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    position: absolute;
+    top: 18.9%;
+    z-index: 3;
+}
+
 .section-2_container {
     max-width: 1410px;
     min-height: 970px;
@@ -235,6 +251,8 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
     font-size: 48px;
     font-weight: 600;    
     margin-bottom: 60px;
+    position: relative;
+    z-index: 5;
 }
 
 .why-wrap {
@@ -327,6 +345,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 
 .section-3 {
     background: #fff;
+    position: relative;
     z-index: 5;
 }
 
@@ -385,6 +404,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 /* Sec-4 */ 
 
 .section-4 {
+    position: relative;
     z-index: 5;
 }
 
@@ -472,11 +492,12 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 /* Sec-5 */ 
 
 .section-5 {
+    position: relative;
     z-index: 5;
 }
 
 .section-5_container {
-    max-width: 1200px;
+    max-width: 80%;
     min-height: 850px;
     padding: 0 15px;
     margin: 0 auto;
@@ -492,8 +513,6 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 .works-wrap {
     display: flex;
     justify-content: center;
-    position: relative;
-    z-index: auto;
 }
 
 .works_item {
@@ -570,29 +589,28 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 }
 
 .owl-item .works_item-img {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 /* Owl Carousel - Nav */ 
 
-.works-wrap .owl-nav {
-    width: 115%;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 5;
-}
-
 .owl-prev span, .owl-next span {
+    height: 200px;
     font-size: 120px;
     color: transparent;
+    position: absolute;
+    top: 33%;
     transition: 0.3s;
 }
+
+.owl-prev span {
+    left: -6%;
+}
+
+.owl-next span {
+    right: -6%;
+}
+
 .owl-prev span:before {
     content: "-";
     color: transparent;
@@ -620,7 +638,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 }
 
 .works-wrap .owl-carousel .owl-stage-outer {
-    z-index: 10;
+    z-index: 10 !important;
 }
 
 /* Owl Carousel - Dots */ 
@@ -655,6 +673,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 /* Sec-5 */ 
 
 .footer {
+    position: relative;
     z-index: 5;
 }
 
@@ -794,6 +813,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
     border: none;
     font-size: 15px;
     font-weight: 400;
+    background: transparent;
 }
 
 .questions_form-element_submit {
