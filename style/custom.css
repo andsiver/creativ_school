@@ -116,11 +116,16 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
     transition: 0.1ms;
 }
 
-/* Section-1 */
+/* Sec-1 */
 
 .section-1 {
     position: relative;
     z-index: 2;
+
+    background-image: url('../img/bg_top.svg'), linear-gradient(to right, #f77757, #ff8449, #ff9339, #ffa325, #ffb500);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: initial;
 }
 
 .section-1_container {
@@ -129,9 +134,9 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
     padding: 140px 15px 0 15px;
     margin: 0 auto;
 
-    background-image: url('../img/left-gradient.svg'), url('../img/cutter.svg'), url('../img/girl.png'), url('../img/left.svg'), linear-gradient(to right, #f77757, #ff8449, #ff9339, #ffa325, #ffb500);
+    background-image: url('../img/girl_eraser.svg'), url('../img/girl.png'); 
     background-repeat: no-repeat;
-    background-position: left bottom, center bottom, 95% 65%, left bottom;
+    background-position: right bottom, 95% 65%;
     background-size: initial;
 }
 
@@ -498,7 +503,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 }
 
 .section-5_container {
-    width: 80%;
+    width: 82%;
     max-width: 1410px;
     min-height: 850px;
     padding: 0 15px;
@@ -672,7 +677,7 @@ h1, h2, h3, h4, p, a, button, input, ::placeholder {
 
 }
 
-/* Sec-5 */ 
+/* Footer */ 
 
 .footer {
     position: relative;
